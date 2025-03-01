@@ -1,0 +1,111 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1 {
+    font-family: 'Pacifico', cursive;
+    color: #333;
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #333;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1em;
+}
+
+nav a:hover {
+    color: #f39c12;
+}
+
+/* Container Styles */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 30px;
+    text-align: center;
+}
+
+.container img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin: 20px 0;
+}
+
+/* Flex Layout for Services Page */
+.flex-container {
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.flex-container img {
+    width: 45%;
+    max-width: 500px;
+    height: auto;
+}
+
+/* Grid Layout for Gallery Page */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.grid-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    .flex-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .flex-container img {
+        width: 80%;
+    }
+}
+figcaption{
+    font-family: cursive;
+    font-style: italic;
+    font-weight: 200;
+    color: rgb(61, 51, 51);
+    text-shadow: #333;
+}
